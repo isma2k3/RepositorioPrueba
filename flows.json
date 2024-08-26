@@ -1,1 +1,65 @@
-[{"id":"7493e9ee.4b09e8","type":"comment","z":"7815539e.9ef41c", "name":"Node-Red y Git","info":"","x":360,"y":100,"wires":[]}]
+[
+    {
+        "id": "0891b548d3fef76e",
+        "type": "tab",
+        "label": "Flujo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7493e9ee.4b09e8",
+        "type": "comment",
+        "z": "0891b548d3fef76e",
+        "name": "Node-Red y Git",
+        "info": "",
+        "x": 600,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "895e9114c04a6de9",
+        "type": "inject",
+        "z": "0891b548d3fef76e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 390,
+        "y": 240,
+        "wires": [
+            [
+                "6da5e1e66f1373ab"
+            ]
+        ]
+    },
+    {
+        "id": "6da5e1e66f1373ab",
+        "type": "debug",
+        "z": "0891b548d3fef76e",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 240,
+        "wires": []
+    }
+]
